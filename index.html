@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - A Pen by himanshuusingh</title>
+  
+  
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+body{
+  font-family:Poppins;
+  line-height:1.4;
+  background-color:silver;
+  width:500px;
+  margin:auto;
+  font-weight:bold;
+}
+form{
+  background: rgb(250,255,0,0.2);
+  padding:2.5 rem;
+  border-radius:5 rem;
+    width:500px;
+    margin:auto;
+  font-weight:bold;
+}
+.submit-button{
+  background:blue;
+  padding: 0.75rem;
+  border-radius: 2px;
+  width:100%;
+  color:white;
+  cursor: pointers;
+}
+.input-headings{
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-inputs{
+  display:block;
+    width:90%;
+    height:2rem;
+    padding:0.25 rem 0.75rem;
+    backround-color:#00ffff;
+    border:1px solid #4073FF;
+      border-radius:0.25rem;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html>
+  <Header>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+  </Header>
+  <body>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="input-headings">
+<form id="Survey Form">
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" placeholder="Himanshu Singh" class="form-inputs" required</input>
+  <br>
+  <label for="email">Email</label>
+  <input id= "email" type="email" name="email" class="form-inputs" placeholder="hksisonlyme@gmail.com" required</input>
+  <br>
+  <label for="number">Age</label>
+  <input id="number" type="number" age="number" placeholder="24" min="18" max="100" class="form-inputs" required </input>
+  <br>
+  <label for ="dropdown" id="dropdown"> Which option best describes your current role?</label>
+  <select id="dropdown" class="form-inputs">
+    <option value="Student">student</option>
+        <option value="Full-time job">Full-time job</option>
+        <option value="Full-time learner">Full-time learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="other">other</option>
+    </select>
+    <br>
+  <label for="model" id="model"><b>Would you recommend freeCodeCamp to a friend?</b></label>
+  <br>
+   <input id="model" type="radio" id="Definitely" name ="definitely" value="Definitely"> 
+  <label for="model">Definitely</label>
+  <br>
+   <input id="model" type="radio" id="may be" name ="may be" value="may be"> 
+  <label for="model">May be</label>
+  <br>
+   <input id="model" type="radio" id="not sure" name ="not sure" value="not sure"> 
+  <label for="model">Not sure</label>
+      <br>
+  <br>
+  <label for ="dropdown" id="dropdown"> What is your favorite feature of freeCodeCamp?</label>
+<select id="dropdown">
+    <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>      
+    <option value="community">Community</option>
+        <option value="open-source">Open-source</option>     
+  </select>
+  <br>
+  <label for="features"><b>What would you like to see improved? (Check all that apply)</b></label>
+  <br>
+  
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Back-end projects</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Data Visualisation</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Challenges</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Open source community</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Gitter help rooms</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Front-end projects</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Videos</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">City meetups</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Wiki</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Forum</label>
+  <br>
+  <input id="checkbox" type="checkbox" name="features" value="Projects">
+  <label for="checkbox">Additional courses</label>
+  <br>
+  <label id="textarea">Any comments or suggestions?</label>
+  <br>
+  <textarea id="textarea" name="Comments" row a="5" col a="40">
+  </textarea>
+  <br>
+  <input id="submit" type="submit" value="Submit">
+  </div>
+ </form> 
+  </body>
+  </html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+      <script id="rendered-js" >
+// !! IMPORTANT README:
+
+// You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
+
+/***********
+INSTRUCTIONS:
+  - Select the project you would 
+    like to complete from the dropdown 
+    menu.
+  - Click the "RUN TESTS" button to
+    run the tests against the blank 
+    pen.
+  - Click the "TESTS" button to see 
+    the individual test cases. 
+    (should all be failing at first)
+  - Start coding! As you fulfill each
+    test case, you will see them go   
+    from red to green.
+  - As you start to build out your 
+    project, when tests are failing, 
+    you should get helpful errors 
+    along the way!
+    ************/
+
+// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
+
+// Once you have read the above messages, you can delete all comments.
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
